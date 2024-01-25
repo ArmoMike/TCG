@@ -1,0 +1,18 @@
+.rules-div {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin: 20px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: justify;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #de0000;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+h1 {
+  color: green;
+}

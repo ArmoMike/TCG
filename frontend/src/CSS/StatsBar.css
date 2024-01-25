@@ -1,0 +1,88 @@
+/* statsbar.css */
+
+.hp-bar-container-player {
+  position: absolute;
+  left: 2%;
+  top: 63%;
+}
+
+.hp-bar-container-enemy {
+  position: absolute;
+  right: 2%;
+  top: 65%;
+}
+.hp-bar {
+  width: 150px;
+  height: 25px;
+  background-color: #ccc;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative; /* Add relative positioning to contain absolute children */
+}
+
+.hp-fill.hp-green,
+.hp-fill.hp-red {
+  height: 100%;
+  position: absolute; /* Position absolute to the .hp-bar */
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+}
+
+.hp-fill.hp-green {
+  background-color: #00cc00;
+  transition: width 0.2s ease-in-out;
+}
+
+.hp-fill.hp-red {
+  background-color: #ff0000;
+}
+
+.hp-number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Text color */
+  margin: 0 auto; /* Center the bar horizontally */
+}
+.manadisplay {
+  border: 1px solid black;
+  background: rgb(114, 68, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(114, 68, 251, 0.6166841736694677) 6%,
+
+    rgba(8, 237, 169, 1) 29%,
+    rgba(115, 70, 252, 1) 83%
+  );
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 26px;
+}
+.armordisplay {
+  position: relative;
+  display: inline-block;
+}
+
+.armordisplay img {
+  width: 35px; /* Adjust the width according to your needs */
+  height: 35px; /* Adjust the height according to your needs */
+  padding-top: 10px;
+}
+.armor-text {
+  position: absolute;
+  top: 80%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: white;
+}

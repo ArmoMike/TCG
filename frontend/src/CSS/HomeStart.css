@@ -1,0 +1,58 @@
+/* HomeStart.css */
+.homestart {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../assets/slaythespire_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; /* Centre l'image horizontalement et verticalement */
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-brand {
+  position: absolute;
+  top: 20px; /* Ajustez la valeur en fonction de la marge souhaitée depuis le haut de la page */
+  left: 20px; /* Ajustez la valeur en fonction de la marge souhaitée depuis la gauche de la page */
+}
+.homestart-buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.homestart-header {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  width: 20%;
+  border-radius: 10px;
+  margin-top: -250px;
+}
+.homestart-button {
+  background-color: #169f2f;
+  color: rgb(50, 50, 50);
+  font-size: 22px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  width: 180px;
+}
+
+.homestart-button:hover {
+  background-color: #4fa3d1;
+}
+@media screen and (max-width: 600px) {
+  .homestart {
+    background-size: cover;
+  }
+
+  .homestart-header {
+    width: 90%;
+    margin-top: -150px;
+  }
+}

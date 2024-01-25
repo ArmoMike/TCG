@@ -1,0 +1,23 @@
+cardboard.css .cardboard-container {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cardboard-container {
+  width: 100%; /* Make the Cardboard container take full width */
+  display: flex;
+  margin: 15px;
+  justify-content: center; /* Center the Cardboard horizontally */
+  position: fixed; /* Fix the position */
+
+  bottom: 0; /* Align to the bottom of the viewport */
+}
+
+.cardboard {
+  display: flex;
+  max-height: 45vh;
+  width: 90%;
+  justify-content: center;
+}

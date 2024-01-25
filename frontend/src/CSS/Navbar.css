@@ -1,0 +1,62 @@
+.menu-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Center horizontally */
+}
+
+.logo-img {
+  width: 85px; /* Adjust the width of your logo */
+  margin-bottom: 10px;
+}
+
+.menu-icon {
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10; /* Ensure it's on top */
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  background-color: #333; /* or set it to the background of your components */
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+  width: 200px;
+  z-index: 1; /* Lower z-index to be below .menu-icon */
+}
+
+.menu.open {
+  transform: translateX(0);
+  border: 2px solid #000000; /* Add a border to the right side of the open menu */
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.5); /* Add box shadow to the right */
+  z-index: 3; /* Set a higher z-index for the open menu */
+}
+
+.menu a {
+  color: #fff; /* Adjust the color of the menu links */
+  text-decoration: none;
+  margin-bottom: 10px; /* Add space between menu items */
+}
+
+.menu button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px; /* Add space between menu items */
+}
+
+.UserEmail {
+  color: whitesmoke;
+  margin-bottom: 10px;
+}

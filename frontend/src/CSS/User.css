@@ -1,0 +1,164 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap");
+/* HoverButton CSS */
+.hoverbutton-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Ajoutez ces styles dans votre fichier CSS global ou dans le fichier où vous définissez les styles du composant HoverButton */
+.hover-message {
+  position: relative;
+  display: inline-block;
+}
+
+.info-icon {
+  display: block;
+  margin: 8px;
+}
+
+.info-message-container {
+  position: absolute; /* Modifiez de relative à absolute */
+  top: 200%; /* placer le message en dessous de l'icône */
+  left: 0; /* placer le message à gauche de l'icône */
+  background-color: #f0f0f0;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.5s linear;
+  width: 250px;
+}
+
+.hover-message:hover .info-message-container {
+  visibility: visible;
+}
+
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+body {
+  background: #f1f1f1;
+
+  font-family: "Poppins";
+  height: 100vh;
+}
+.signuplogin-bg {
+  background-image: url("../../public/assets/login_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  background: #fff;
+}
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  color: #333;
+  text-decoration: none;
+}
+.pages {
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.workout-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+
+/* new workout form */
+label,
+input {
+  display: block;
+}
+input {
+  color: #ddd;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Couleur blanche avec une opacité de 0.5 */
+}
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+form button:hover {
+  background: rgb(45, 88, 45);
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
+}
+
+/* navbar */
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  margin-left: 10px;
+}
+
+nav button {
+  background: #fff;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 10px;
+}
+/* auth forms */
+form.signup,
+form.login {
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 40px;
+  border-radius: 4px;
+  color: green;
+  background-color: rgba(0, 0, 0, 0.8);
+}

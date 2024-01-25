@@ -1,0 +1,112 @@
+/* map.css */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #977d4e;
+}
+
+.map-button {
+  position: relative;
+  color: black;
+  font-size: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-button.unclickable {
+  cursor: not-allowed;
+  height: 20px;
+}
+.map-button.clickable {
+  height: 20px;
+}
+
+.mapStyle {
+  background-image: url(../assets/map.png);
+  background-repeat: no-repeat;
+  height: 810px;
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fa-flag:hover {
+  color: red;
+}
+
+.map-button.button-1 {
+  position: relative;
+
+  left: 8.4%;
+  bottom: -85%;
+  color: black;
+  font-size: 24px;
+}
+
+.map-button.button-2 {
+  position: relative;
+  bottom: -76.5%;
+  left: 19%;
+  color: black;
+  font-size: 24px;
+}
+.map-button.button-3 {
+  position: relative;
+  bottom: -64%;
+  left: 33%;
+  color: black;
+  font-size: 24px;
+}
+.map-button.button-4 {
+  position: relative;
+  bottom: -50%;
+  left: 39.7%;
+  color: black;
+  font-size: 24px;
+}
+.map-button.button-5 {
+  position: relative;
+  bottom: -45%;
+  left: 48%;
+  color: black;
+  font-size: 24px;
+}
+.map-button.button-6 {
+  position: relative;
+  bottom: -62%;
+  left: 58%;
+  color: black;
+  font-size: 24px;
+}
+.map-button.button-7 {
+  position: relative;
+  bottom: -46%;
+  left: 63%;
+  color: black;
+  font-size: 24px;
+}
+.map-button.button-8 {
+  position: relative;
+  bottom: -35%;
+  left: 65%;
+  color: black;
+  font-size: 24px;
+}
+.map-button.button-9 {
+  position: relative;
+  bottom: -25%;
+  left: 66%;
+  color: black;
+  font-size: 24px;
+}
+.map-button.button-10 {
+  position: relative;
+  bottom: -12%;
+  left: 69%;
+  color: red;
+  font-size: 45px;
+}
